@@ -4,9 +4,9 @@ import pandas as pd
 from PIL import Image
 import matplotlib.pyplot as plt
 
-import streamlit_modal
-from streamlit_modal import Modal
-import streamlit.components.v1 as components
+#import streamlit_modal
+#from streamlit_modal import Modal
+#import streamlit.components.v1 as components
 
 
 # Función para calcular los pesos a partir de la matriz de comparación
