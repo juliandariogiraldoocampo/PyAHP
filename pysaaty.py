@@ -23,7 +23,7 @@ def app():
     # HTML para título y subtítulos
     st.markdown("""
                 <h1 style='text-align: center; font-size: 36px;'>Analytic Hierarchy Process - AHP</h1>
-                <h3 style='text-align: center; font-size: 30px;'>ANÁLISIS MULTIVARIADO <br> Ponderación de Variables</h3>
+                <h3 style='text-align: center; font-size: 30px;'>ANÁLISIS MULTIVARIADO - Ponderación de Variables</h3>
     """, unsafe_allow_html=True)
     
     #  Logo
