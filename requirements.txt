@@ -2,7 +2,6 @@ streamlit
 numpy
 pandas
 matplotlib
-matplotlib.pyplot
 PIL
 streamlit.components.v1
 streamlit_modal
