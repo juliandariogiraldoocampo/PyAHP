@@ -118,41 +118,7 @@ def app():
                     </p>
                     """, unsafe_allow_html=True)
 
-    # Crear el modal
-    if st.session_state.get('pesosCalculados', False):
-        modal = Modal(f"{st.session_state['nombreFenomeno']}", key="informe-modal", padding=20, max_width=800)
-        open_modal = st.button("Abrir Informe")
-        if open_modal:
-            modal.open()
-
-        if modal.is_open():
-            with modal.container():
-                if 'nombreFenomeno' in st.session_state and 'pesosPorcentaje' in st.session_state and 'fig' in st.session_state:
-                    #st.write(f"##### Resultados para: {st.session_state['nombreFenomeno']}")
-
-                    st.markdown("""
-                    <style>
-                    .aviso {
-                        font-size: 10pt;
-                        color: gray;
-                    }
-                    </style>
-                    <p class="aviso">Para obtener una copia de estos resultados resione 'CTRL + P' en Windows o 'CMD + P' en Mac para abrir la ventana de impresión. </p>
-                    """, unsafe_allow_html=True)
-                    
-                    # Usar columnas para organizar el contenido
-                    col1, col2, col3 = st.columns([1,3,1])
-                    
-                    # Columna para el gráfico
-                    #col2.subheader("Gráfico")
-                    col2.pyplot(st.session_state['fig'])
-
-                    col1, col2, col3 = st.columns([1,2,1])
-                    # Columna para la matriz de resultados
-                    #col2.subheader("Matriz de Resultados")
-                    col2.dataframe(st.session_state['pesosPorcentaje'].to_frame(name="Peso (%)"))
-                else:
-                    st.write("Por favor, complete la matriz de comparación y presione 'Calcular pesos'.")
+    
 
                 
 if __name__ == "__main__":
