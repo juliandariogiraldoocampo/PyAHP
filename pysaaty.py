@@ -113,7 +113,7 @@ def app():
                     }
                     </style>
                     <p class="impresion">Para garantizar la reproducibilidad de este modelo de ponderación, es recomendable obtener una copia de este informe. 
-                            Para ello utilice la función de impresión del navegador presionando 'CTRL + P' en Windows o 'CMD + P' en Mac para abrir la ventana de impresión.
+                            Para ello utilice la función de impresión de la aplicación haciendo clic en los tres puntos que están en la esquina superior derecha.
                     </p>
                     """, unsafe_allow_html=True)
 
